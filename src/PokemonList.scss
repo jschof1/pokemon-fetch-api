@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+.pokemon-list {
+  display: flex;
+  flex-direction: column;
+
+  &__search-header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 1rem;
+  }
+
+  &__heading {
+    font-size: 2rem;
+    padding-top: 1rem;
+    margin: 0;
+  }
+
+  &__search-bar {
+    display: flex;
+    justify-content: flex-end;
+
+    .pokemon-list__search-input {
+      width: 200px;
+      padding: 0.5rem;
+      border-radius: 0.25rem;
+      color: white;
+      background-color: #3462ad;
+      border: #ffcc01 solid 3px;
+
+      &::placeholder {
+        color: white;
+      }
+    }
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+  }
+
+  .pokemon-card {
+    background-color: #3462ad;
+    border: #ffcc01 solid 4px;
+    font-size: 1.2em;
+    padding: 1rem;
+    text-align: center;
+    color: white;
+    border-radius: 0.25rem;
+    box-shadow: rgba(0, 0, 0, 0.9) 0px 1px 4px;
+  }
+
+  &__image {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 0.5rem;
+  }
+}
